@@ -6,6 +6,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import TextScroll from "./components/TextScroll";
 import Carousel from "./components/Carousel";
 import GetStartedButton from "./components/GetStartedButton";
+import Your_phone from "./components/Your_phone";
+import RainbowStrip from "./components/RinbowStrip";
 
 const App = () => {
   useEffect(() => {
@@ -43,10 +45,14 @@ const App = () => {
           </p>
         </div>
         <Carousel slides={slides} interval={6500} head={head} text={text} />
-      <div className="absolute left-[5rem] bottom-0 ">
-
-      <GetStartedButton className='absolute' />
+        <div className="absolute left-[5rem] bottom-[3rem] 0 ">
+          <GetStartedButton className="absolute " />
+        </div>
       </div>
+      <Your_phone />
+      <div className="relative ">
+        <div className="absolute -bottom-20 -left-10 rounded-full w-[10rem] h-[10rem] bg-[rgb(117,147,60)]"></div>
+        <RainbowStrip />
       </div>
     </div>
   );

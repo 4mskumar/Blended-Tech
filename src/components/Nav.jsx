@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Nav = () => {
   const [showOptions, setShowOptions] = useState(false);
   const [showOptions1, setShowOptions1] = useState(false);
+  const [first, setfirst] = useState(false)
   return (
     <div className=" flex justify-between items-center px-[20rem] pt-5">
       <div className="flex gap-2">
