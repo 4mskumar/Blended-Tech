@@ -79,7 +79,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-10 items-center justify-between w-full border-t py-12">
         <p className="text-gray-400 text-xs">
-          © 2024 Blended Technology Inc. All rights reserved.
+          © 2024 Blended Technology Inc. All rights reserved. Just for practice purposes.
         </p>
         <div className="flex items-center gap-5">
           <p className="text-xs text-gray-400">Privacy Policy</p>

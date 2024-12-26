@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Nav = () => {
-  const [showOptions, setShowOptions] = useState(false);
+  const [showOptions, setShowOptions] = useState(null);
   const [showOptions1, setShowOptions1] = useState(false);
   const [first, setfirst] = useState(false)
   return (
@@ -23,13 +23,15 @@ const Nav = () => {
           <a className="font-poppins text-gray-700">Products</a>
           <div
             onClick={() => setShowOptions((prev) => !prev)}
+
             className={`${
               showOptions
                 ? "rotate-180 ease transition-all duration-150"
                 : "rotate-0 transition-all duration-150 ease-in"
-            } cursor-pointer rotate-0`}
+            } cursor-pointer rotate-0 `}
           >
             <MdKeyboardArrowDown
+            className=""
               height={50}
               size={25}
               color="#151D2D"
