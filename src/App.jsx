@@ -8,6 +8,11 @@ import Carousel from "./components/Carousel";
 import GetStartedButton from "./components/GetStartedButton";
 import Your_phone from "./components/Your_phone";
 import RainbowStrip from "./components/RinbowStrip";
+import LatestNews from "./components/LatestNews";
+import { Faq } from "./components/Faq";
+import GrowYourOwn from "./components/GrowYourOwn";
+import Footer from "./components/Footer";
+// import Temp from "./components/Temp";
 
 const App = () => {
   useEffect(() => {
@@ -54,6 +59,10 @@ const App = () => {
         <div className="absolute -bottom-20 -left-10 rounded-full w-[10rem] h-[10rem] bg-[rgb(117,147,60)]"></div>
         <RainbowStrip />
       </div>
+      <LatestNews />
+      <Faq />
+      <GrowYourOwn />
+      <Footer />
     </div>
   );
 };
